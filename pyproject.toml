@@ -1,0 +1,181 @@
+[project]
+name = "spdm"
+version = "1.0.0"
+description = "spdm"
+requires-python = "3.12.12"
+dependencies = [
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "numpy (>=1.26.0,<2.0.0)",
+    "nvidia-cuda-runtime-cu12 (==12.8.90)",
+    "nvidia-cudnn-cu12 (==9.10.2.21)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pytorch-tcn (>=1.2.3,<2.0.0)",
+    "reformer-pytorch (==1.4.4)",
+    "scikit-learn (==1.7.2)",
+    "torch (==2.8.0)",
+    "triton (==3.4.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "optuna (>=4.8.0,<5.0.0)",
+    "optuna-dashboard (>=0.20.0,<0.21.0)",
+    "bitsandbytes (>=0.49.2,<0.50.0)",
+    "nvitop (>=1.6.2,<2.0.0)",
+    "ptwt (>=1.0.1,<2.0.0)",
+    "geoopt (>=0.5.1,<0.6.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires      = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = ["poethepoet (>=0.37.0,<0.38.0)"]
+
+[tool.poe.tasks]
+
+[tool.poe.tasks.echo]
+cmd  = "python -c \"print('hello world!')\""
+help = "Echo hello world"
+
+[tool.poe.tasks.clean]
+cmd  = "bash scripts/clean.sh ${dataset}"
+help = "Clean temp files and caches. Use --dataset to clean only a specific dataset's results."
+[[tool.poe.tasks.clean.args]]
+name    = "dataset"
+help    = "Dataset name (e.g. ETTh1). Cleans all if omitted."
+default = ""
+
+[tool.poe.tasks.hpo-clean]
+cmd  = "bash scripts/hpo/hpo_clean.sh --dataset ${dataset} --pl ${pl}"
+help = "Clean Optuna study DB and exported results for a dataset+pred_len"
+[[tool.poe.tasks.hpo-clean.args]]
+name = "dataset"
+help = "Dataset name (e.g. ETTh1)"
+[[tool.poe.tasks.hpo-clean.args]]
+name = "pl"
+help = "Prediction length (e.g. 96)"
+
+[tool.poe.tasks.cuda]
+cmd  = "python -c \"import torch; print('PyTorch Version:', torch.__version__); print('CUDA Available:', torch.cuda.is_available()); print('CUDA Version:', torch.version.cuda); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A'); print('GPU Count:', torch.cuda.device_count() if torch.cuda.is_available() else 0)\""
+help = "Check CUDA and PyTorch setup"
+
+[tool.poe.tasks.optuna]
+cmd  = "bash scripts/hpo/hpo_parallel.sh --dataset ${dataset} --pl ${pl} --trials ${trials} --gpu ${gpu} --epoch ${epoch} --patience ${patience} --bg_mode ${bg_mode} --nodes ${nodes} --stagger ${stagger}"
+help = "Run parallel HPO sweep"
+[[tool.poe.tasks.optuna.args]]
+name = "dataset"
+help = "Dataset name (e.g. ETTh1, Weather, multi)"
+[[tool.poe.tasks.optuna.args]]
+name    = "pl"
+help    = "Prediction length or 'all' (default: all)"
+default = "all"
+[[tool.poe.tasks.optuna.args]]
+name    = "trials"
+help    = "Number of Optuna trials (default: 50)"
+default = "50"
+[[tool.poe.tasks.optuna.args]]
+name    = "gpu"
+help    = "Starting GPU index (default: 0)"
+default = "0"
+[[tool.poe.tasks.optuna.args]]
+name    = "epoch"
+help    = "Override training epochs (0 = use default 50)"
+default = "0"
+[[tool.poe.tasks.optuna.args]]
+name    = "patience"
+help    = "Early stopping patience (default: 5)"
+default = "5"
+[[tool.poe.tasks.optuna.args]]
+name    = "bg_mode"
+help    = "0 = foreground (default), 1 = daemon mode (nohup, survives terminal close)"
+default = "0"
+[[tool.poe.tasks.optuna.args]]
+name    = "nodes"
+help    = "Number of GPUs for multi-GPU mode (default: 1 = single GPU)"
+default = "1"
+[[tool.poe.tasks.optuna.args]]
+name    = "stagger"
+help    = "Delay in seconds between launching background studies (default: 0)"
+default = "0"
+
+[tool.poe.tasks.hpo-list]
+cmd  = "bash scripts/hpo/hpo_parallel.sh --list"
+help = "List all running Optuna daemon processes"
+
+[tool.poe.tasks.hpo-stop]
+cmd  = "bash scripts/hpo/hpo_parallel.sh --stop --dataset ${dataset} --pl ${pl}"
+help = "Stop a running Optuna daemon"
+[[tool.poe.tasks.hpo-stop.args]]
+name = "dataset"
+help = "Dataset name (e.g. ETTh1)"
+[[tool.poe.tasks.hpo-stop.args]]
+name = "pl"
+help = "Prediction length (e.g. 96)"
+
+[tool.poe.tasks.hpo-stop-all]
+cmd  = "bash scripts/hpo/hpo_parallel.sh --stop-all"
+help = "Stop all running Optuna daemons"
+
+[tool.poe.tasks.hpo-batch]
+cmd  = "bash scripts/hpo/hpo_batch.sh --n_gpus ${gpus} --study ${studies} --epoch ${epoch} --metric ${metric}"
+help = "Run HPO in batch mode with process-level GPU isolation"
+[[tool.poe.tasks.hpo-batch.args]]
+name    = "gpus"
+help    = "Number of GPUs (default: 1)"
+default = "1"
+[[tool.poe.tasks.hpo-batch.args]]
+name    = "studies"
+help    = "Study definitions, space-separated: 'DS:PL:TRIALS DS:PL:TRIALS'"
+default = ""
+[[tool.poe.tasks.hpo-batch.args]]
+name    = "epoch"
+help    = "Override training epochs (default: 0)"
+default = "0"
+[[tool.poe.tasks.hpo-batch.args]]
+name    = "metric"
+help    = "Optimization metric (default: mse)"
+default = "mse"
+
+[tool.poe.tasks.dashboard-single]
+cmd  = "bash scripts/hpo/hpo_dashboard.sh --dataset ${data} --pl ${pl}"
+help = "Launch Optuna dashboard for a study"
+[[tool.poe.tasks.dashboard-single.args]]
+name = "data"
+help = "Dataset name (e.g. ETTh1)"
+[[tool.poe.tasks.dashboard-single.args]]
+name = "pl"
+help = "Prediction length (e.g. 96)"
+
+[tool.poe.tasks.dashboard]
+cmd  = "bash scripts/hpo/hpo_dashboard.sh --all --port ${port}"
+help = "Launch Optuna dashboard showing all studies in one view"
+[[tool.poe.tasks.dashboard.args]]
+name    = "port"
+help    = "Dashboard port (default: 58231)"
+default = "58231"
+
+[tool.poe.tasks.hpo-dump]
+cmd  = "python scripts/hpo/hpo_dump.py --dataset ${dataset} --pl ${pl}"
+help = "Dump current best Optuna results to output/optuna"
+[[tool.poe.tasks.hpo-dump.args]]
+name = "dataset"
+help = "Dataset name (e.g. ETTh1)"
+[[tool.poe.tasks.hpo-dump.args]]
+name    = "pl"
+help    = "Prediction length or 'all' (default: all)"
+default = "all"
+
+[tool.poe.tasks.gpu-reset]
+cmd  = "python scripts/hpo/gpu_budget_reset.py ${flags}"
+help = "Reset GPU memory budget — shows current state and asks for confirmation"
+[[tool.poe.tasks.gpu-reset.args]]
+name    = "flags"
+help    = "Pass --yes to skip confirmation and auto-clean stale entries"
+default = ""
+
+[tool.poe.tasks.update]
+cmd  = "python scripts/update_excel_from_optuna.py"
+help = "Update all hpo results to excel"

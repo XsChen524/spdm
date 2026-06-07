@@ -1,0 +1,30 @@
+(ETTm1 BiMamba4TS)
+ETTm1_48_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0004|ft:M|sl:48|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:2
+mse:0.4381592869758606, mae:0.41076141595840454
+ETTm1_96_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0004|ft:M|sl:96|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:0
+mse:nan, mae:nan
+ETTm1_192_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0004|ft:M|sl:192|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:0
+mse:nan, mae:nan
+ETTm1_336_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0004|ft:M|sl:336|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:0
+mse:nan, mae:nan
+ETTm1_720_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0004|ft:M|sl:720|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:0
+mse:0.3117028772830963, mae:0.3596811890602112
+
+(Weather BiMamba4TS)
+Weather_48_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:48|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.20303042232990265, mae:0.2388298660516739
+Weather_96_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:96|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.1695864051580429, mae:0.21408478915691376
+Weather_192_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:192|ll:48|pl:96|dm:64|nh:8|el:2|dl:1|df:128|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.15735872089862823, mae:0.20424288511276245
+
+(PEMS08 BiMamba4TS)
+PEMS08_48_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:48|ll:48|pl:96|dm:128|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:2
+mse:1.103657841682434, mae:0.7558432817459106
+PEMS08_96_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:96|ll:48|pl:96|dm:128|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:3
+mse:0.76597660779953, mae:0.6180501580238342
+PEMS08_144_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:144|ll:48|pl:96|dm:128|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:4
+mse:0.5561248660087585, mae:0.5094963908195496
+PEMS08_192_96_BiMamba4TS|LOOKBACK_BIMAMBA4TS|lr:0.0001|ft:M|sl:192|ll:48|pl:96|dm:128|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:5
+mse:0.3755398988723755, mae:0.38536790013313293
+

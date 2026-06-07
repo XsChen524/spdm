@@ -1,0 +1,34 @@
+(ETTm1 Transformer)
+ETTm1_48_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6520209312438965, mae:0.5823696255683899
+ETTm1_96_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.7763652205467224, mae:0.6255718469619751
+ETTm1_192_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6450386047363281, mae:0.5889235734939575
+ETTm1_336_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6838782429695129, mae:0.6358634829521179
+ETTm1_720_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.828951895236969, mae:0.6889497637748718
+
+(Weather Transformer)
+Weather_48_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:512_nh:8_el:2_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.7219637036323547, mae:0.6196362376213074
+Weather_96_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:512_nh:8_el:2_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.47148117423057556, mae:0.4844571053981781
+Weather_192_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:512_nh:8_el:2_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3110821843147278, mae:0.372933954000473
+Weather_336_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:512_nh:8_el:2_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3430856764316559, mae:0.3949403762817383
+Weather_720_96_Transformer_des:LOOKBACK_TRANS_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:512_nh:8_el:2_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.30228322744369507, mae:0.36924025416374207
+
+(PEMS08 Transformer)
+PEMS08_48_96_Transformer|LOOKBACK|lr:0.001|ft:M|sl:48|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.2987091839313507, mae:0.30256205797195435
+PEMS08_96_96_Transformer|LOOKBACK|lr:0.001|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.28636103868484497, mae:0.2960280179977417
+PEMS08_144_96_Transformer|LOOKBACK|lr:0.001|ft:M|sl:144|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.27395614981651306, mae:0.28665030002593994
+PEMS08_192_96_Transformer|LOOKBACK|lr:0.001|ft:M|sl:192|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.30345964431762695, mae:0.31122705340385437
+

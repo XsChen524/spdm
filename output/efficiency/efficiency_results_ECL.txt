@@ -1,0 +1,201 @@
+================================================================================
+Model: BiMamba4TS, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20260528_030343
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: BiMamba4TS
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 128
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.20817536
+  - MAE: 0.29753006
+  - Training Time: 23.70 ms/iter
+  - Avg Allocated GPU Memory: 804.30 MB
+================================================================================
+
+================================================================================
+Model: interPDN, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20260528_031345
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: interPDN
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 336
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.21135814
+  - MAE: 0.29029906
+  - Training Time: 36.25 ms/iter
+  - Avg Allocated GPU Memory: 2132.89 MB
+================================================================================
+
+================================================================================
+Model: S_Mamba, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_024016
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: S_Mamba
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.18351641
+  - MAE: 0.27939671
+  - Training Time: 65.06 ms/iter
+  - Avg Allocated GPU Memory: 631.59 MB
+================================================================================
+
+================================================================================
+Model: PatchTST, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_234458
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: PatchTST
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.20454888
+  - MAE: 0.28943104
+  - Training Time: 109.64 ms/iter
+  - Avg Allocated GPU Memory: 5331.58 MB
+================================================================================
+
+================================================================================
+Model: DLinear, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251207_000729
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: DLinear
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.20425744
+  - MAE: 0.28848153
+  - Training Time: 237.88 ms/iter
+  - Avg Allocated GPU Memory: 446.19 MB
+================================================================================
+
+================================================================================
+Model: iTransformer, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_025159
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: iTransformer
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.17824689
+  - MAE: 0.27099648
+  - Training Time: 52.37 ms/iter
+  - Avg Allocated GPU Memory: 837.58 MB
+================================================================================
+
+================================================================================
+Model: Flowformer, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_032059
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Flowformer
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.27575588
+  - MAE: 0.36715215
+  - Training Time: 70.36 ms/iter
+  - Avg Allocated GPU Memory: 849.48 MB
+================================================================================
+
+================================================================================
+Model: Informer, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_062229
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Informer
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.34909481
+  - MAE: 0.43362242
+  - Training Time: 78.04 ms/iter
+  - Avg Allocated GPU Memory: 524.15 MB
+================================================================================
+
+================================================================================
+Model: Transformer, Dataset: ECL, Model ID: ECL_96_336, Timestamp: 20251206_064443
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Transformer
+  - Dataset: ECL
+  - Model ID: ECL_96_336
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 0.0005
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 336
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.26801544
+  - MAE: 0.35991663
+  - Training Time: 71.24 ms/iter
+  - Avg Allocated GPU Memory: 811.83 MB
+================================================================================
+
+

@@ -1,0 +1,35 @@
+{
+    "study_name": "ManiMamba_Solar_pl96",
+    "version": "v4",
+    "best_value": 1.0361865758895874,
+    "best_params": {
+        "e_layers": 3,
+        "batch_size": 32,
+        "d_model": 256,
+        "d_state": 16,
+        "expand": 1,
+        "epsilon": 1e-05,
+        "cov_window": 8,
+        "cov_stride": 16,
+        "cov_rank": 32,
+        "geo_d_model": 64,
+        "geo_d_state": 4,
+        "geo_d_conv": 4,
+        "geo_expand": 2,
+        "weight_decay": 1e-06,
+        "learning_rate": 0.0008532,
+        "train_epochs": 15,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "dropout": 0.2,
+        "seed": 2023
+    },
+    "best_trial_number": 7,
+    "best_trial_user_attrs": {
+        "mse": 1.0361865758895874,
+        "mae": 0.7528125643730164,
+        "checkpoint": null,
+        "arch_signature": "256|0|3|16|1|1e-05|8|16|32|64|4|4|2",
+        "cuda_accel_overhead_mb": 3106.883056640625
+    }
+}

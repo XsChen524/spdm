@@ -1,0 +1,8 @@
+name: spdm
+channels:
+    - nvidia
+    - pytorch
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.12.12

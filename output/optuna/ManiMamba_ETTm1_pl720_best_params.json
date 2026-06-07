@@ -1,0 +1,35 @@
+{
+    "study_name": "ManiMamba_ETTm1_pl720",
+    "version": "v4",
+    "best_value": 0.4709226191043854,
+    "best_params": {
+        "e_layers": 2,
+        "batch_size": 16,
+        "d_model": 512,
+        "d_state": 8,
+        "expand": 1,
+        "epsilon": 0.0001,
+        "cov_window": 8,
+        "cov_stride": 4,
+        "cov_rank": 0,
+        "geo_d_model": 128,
+        "geo_d_state": 4,
+        "geo_d_conv": 2,
+        "geo_expand": 2,
+        "weight_decay": 0,
+        "learning_rate": 6.650410297747557e-06,
+        "train_epochs": 15,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "dropout": 0.2,
+        "seed": 2023
+    },
+    "best_trial_number": 101,
+    "best_trial_user_attrs": {
+        "mse": 0.4709226191043854,
+        "mae": 0.45072367787361145,
+        "checkpoint": null,
+        "arch_signature": "512|0|2|8|1|0.0001|8|4|0|128|4|2|2",
+        "cuda_accel_overhead_mb": 1513.5919189453125
+    }
+}

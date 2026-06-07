@@ -1,0 +1,34 @@
+(ETTm1 S_Mamba)
+ETTm1_48_96_S_Mamba_des:LOOKBACK_SMB_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.44420483708381653, mae:0.4174841046333313
+ETTm1_96_96_S_Mamba_des:LOOKBACK_SMB_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.333098828792572, mae:0.36872756481170654
+ETTm1_192_96_S_Mamba_des:LOOKBACK_SMB_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.30519887804985046, mae:0.35653847455978394
+ETTm1_336_96_S_Mamba_des:LOOKBACK_SMB_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3040894865989685, mae:0.35831212997436523
+ETTm1_720_96_S_Mamba_des:LOOKBACK_SMB_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3052838146686554, mae:0.36257797479629517
+
+(Weather S_Mamba)
+Weather_48_96_S_Mamba_des:LOOKBACK_SMB_lr:0.001_ft:M_sl:48_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.2225642055273056, mae:0.2678146958351135
+Weather_96_96_S_Mamba_des:LOOKBACK_SMB_lr:0.001_ft:M_sl:96_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.18862085044384003, mae:0.2345849722623825
+Weather_192_96_S_Mamba_des:LOOKBACK_SMB_lr:0.0005_ft:M_sl:192_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.1752239167690277, mae:0.2209523469209671
+Weather_336_96_S_Mamba_des:LOOKBACK_SMB_lr:0.0005_ft:M_sl:336_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.17883504927158356, mae:0.2218797355890274
+Weather_720_96_S_Mamba_des:LOOKBACK_SMB_lr:0.0005_ft:M_sl:720_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.17128244042396545, mae:0.22209326922893524
+
+(PEMS08 S_Mamba)
+PEMS08_48_96_S_Mamba|LOOKBACK|lr:0.001|ft:M|sl:48|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.41265127062797546, mae:0.42776843905448914
+PEMS08_96_96_S_Mamba|LOOKBACK|lr:0.001|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.3268859088420868, mae:0.37230008840560913
+PEMS08_144_96_S_Mamba|LOOKBACK|lr:0.001|ft:M|sl:144|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.25726908445358276, mae:0.31320348381996155
+PEMS08_192_96_S_Mamba|LOOKBACK|lr:0.001|ft:M|sl:192|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.20249377191066742, mae:0.265633225440979
+

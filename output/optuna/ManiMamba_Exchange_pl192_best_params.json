@@ -1,0 +1,35 @@
+{
+    "study_name": "ManiMamba_Exchange_pl192",
+    "version": "v4",
+    "best_value": 0.17865799367427826,
+    "best_params": {
+        "e_layers": 2,
+        "batch_size": 32,
+        "d_model": 256,
+        "d_state": 8,
+        "expand": 1,
+        "epsilon": 1e-05,
+        "cov_window": 32,
+        "cov_stride": 4,
+        "cov_rank": 0,
+        "geo_d_model": 512,
+        "geo_d_state": 4,
+        "geo_d_conv": 2,
+        "geo_expand": 1,
+        "weight_decay": 1e-06,
+        "learning_rate": 3.04e-05,
+        "train_epochs": 15,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "dropout": 0.2,
+        "seed": 2023
+    },
+    "best_trial_number": 711,
+    "best_trial_user_attrs": {
+        "mse": 0.17865799367427826,
+        "mae": 0.3014618158340454,
+        "checkpoint": null,
+        "arch_signature": "256|0|2|8|1|1e-05|32|4|0|512|4|2|1",
+        "cuda_accel_overhead_mb": 43.2421875
+    }
+}

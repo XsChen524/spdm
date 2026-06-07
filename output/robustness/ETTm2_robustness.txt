@@ -1,0 +1,45 @@
+ETTm2_96_96_ManiMamba|ROBUSTNESS|lr:7.708e-06|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:3|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.18611235916614532, mae:0.2702317237854004
+ETTm2_96_192_ManiMamba|ROBUSTNESS|lr:1.349e-05|ft:M|sl:96|ll:48|pl:192|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.24869583547115326, mae:0.3095736503601074
+ETTm2_96_336_ManiMamba|ROBUSTNESS|lr:5.874e-06|ft:M|sl:96|ll:48|pl:336|dm:512|nh:8|el:3|dl:1|df:1024|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.30877357721328735, mae:0.3457747995853424
+ETTm2_96_720_ManiMamba|ROBUSTNESS|lr:1.17e-05|ft:M|sl:96|ll:48|pl:720|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.4087423086166382, mae:0.40277501940727234
+
+ETTm2_96_96_ManiMamba|ROBUSTNESS|lr:7.708e-06|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:3|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.1|itr:0|checkpoint:2
+mse:0.18800130486488342, mae:0.2769758403301239
+ETTm2_96_192_ManiMamba|ROBUSTNESS|lr:1.349e-05|ft:M|sl:96|ll:48|pl:192|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.1|itr:0|checkpoint:2
+mse:0.2507736086845398, mae:0.3162171244621277
+ETTm2_96_336_ManiMamba|ROBUSTNESS|lr:5.874e-06|ft:M|sl:96|ll:48|pl:336|dm:512|nh:8|el:3|dl:1|df:1024|fc:1|eb:timeF|dt:True|cs:projection|nl:0.1|itr:0|checkpoint:2
+mse:0.3103567659854889, mae:0.3519418239593506
+ETTm2_96_720_ManiMamba|ROBUSTNESS|lr:1.17e-05|ft:M|sl:96|ll:48|pl:720|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.1|itr:0|checkpoint:2
+mse:0.40979868173599243, mae:0.40695562958717346
+
+ETTm2_96_96_ManiMamba|ROBUSTNESS|lr:7.708e-06|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:3|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.2|itr:0|checkpoint:3
+mse:0.19464106857776642, mae:0.2912147343158722
+ETTm2_96_192_ManiMamba|ROBUSTNESS|lr:1.349e-05|ft:M|sl:96|ll:48|pl:192|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.2|itr:0|checkpoint:3
+mse:0.2577488422393799, mae:0.3299833834171295
+ETTm2_96_336_ManiMamba|ROBUSTNESS|lr:5.874e-06|ft:M|sl:96|ll:48|pl:336|dm:512|nh:8|el:3|dl:1|df:1024|fc:1|eb:timeF|dt:True|cs:projection|nl:0.2|itr:0|checkpoint:3
+mse:0.3164094090461731, mae:0.36427077651023865
+ETTm2_96_720_ManiMamba|ROBUSTNESS|lr:1.17e-05|ft:M|sl:96|ll:48|pl:720|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.2|itr:0|checkpoint:3
+mse:0.41379818320274353, mae:0.4155827760696411
+
+ETTm2_96_96_ManiMamba|ROBUSTNESS|lr:7.708e-06|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:3|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.3|itr:0|checkpoint:4
+mse:0.20752039551734924, mae:0.3118377923965454
+ETTm2_96_192_ManiMamba|ROBUSTNESS|lr:1.349e-05|ft:M|sl:96|ll:48|pl:192|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.3|itr:0|checkpoint:4
+mse:0.2712939977645874, mae:0.3500415086746216
+ETTm2_96_336_ManiMamba|ROBUSTNESS|lr:5.874e-06|ft:M|sl:96|ll:48|pl:336|dm:512|nh:8|el:3|dl:1|df:1024|fc:1|eb:timeF|dt:True|cs:projection|nl:0.3|itr:0|checkpoint:4
+mse:0.3287287652492523, mae:0.38250598311424255
+ETTm2_96_720_ManiMamba|ROBUSTNESS|lr:1.17e-05|ft:M|sl:96|ll:48|pl:720|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.3|itr:0|checkpoint:4
+mse:0.4219156801700592, mae:0.4282636344432831
+
+ETTm2_96_96_ManiMamba|ROBUSTNESS|lr:7.708e-06|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:3|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.5|itr:0|checkpoint:5
+mse:0.2554176449775696, mae:0.3684392273426056
+ETTm2_96_192_ManiMamba|ROBUSTNESS|lr:1.349e-05|ft:M|sl:96|ll:48|pl:192|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.5|itr:0|checkpoint:5
+mse:0.3222055733203888, mae:0.40584543347358704
+ETTm2_96_336_ManiMamba|ROBUSTNESS|lr:5.874e-06|ft:M|sl:96|ll:48|pl:336|dm:512|nh:8|el:3|dl:1|df:1024|fc:1|eb:timeF|dt:True|cs:projection|nl:0.5|itr:0|checkpoint:5
+mse:0.37616896629333496, mae:0.4340445101261139
+ETTm2_96_720_ManiMamba|ROBUSTNESS|lr:1.17e-05|ft:M|sl:96|ll:48|pl:720|dm:256|nh:8|el:2|dl:1|df:512|fc:1|eb:timeF|dt:True|cs:projection|nl:0.5|itr:0|checkpoint:5
+mse:0.4536839723587036, mae:0.4644045829772949
+

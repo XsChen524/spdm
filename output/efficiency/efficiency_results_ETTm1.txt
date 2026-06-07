@@ -1,0 +1,223 @@
+================================================================================
+Model: S_Mamba, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_133417
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: S_Mamba
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.34087974
+  - MAE: 0.37134230
+  - Training Time: 25.02 ms/iter
+  - Avg Allocated GPU Memory: 91.53 MB
+================================================================================
+
+================================================================================
+Model: iTransformer, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_084009
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: iTransformer
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.34206954
+  - MAE: 0.37681854
+  - Training Time: 14.54 ms/iter
+  - Avg Allocated GPU Memory: 68.65 MB
+================================================================================
+
+================================================================================
+Model: PatchTST, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251227_074016
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: PatchTST
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 128
+  - Train Epochs: 10
+  - Learning Rate: 0.0001
+  - D Model: 128
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.32366976
+  - MAE: 0.36150512
+  - Training Time: 141.12 ms/iter
+  - Avg Allocated GPU Memory: 305.81 MB
+================================================================================
+
+================================================================================
+Model: DLinear, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_191728
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: DLinear
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.34628171
+  - MAE: 0.37331280
+  - Training Time: 12.85 ms/iter
+  - Avg Allocated GPU Memory: 19.30 MB
+================================================================================
+
+================================================================================
+Model: Transformer, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_084403
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Transformer
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.72268260
+  - MAE: 0.62261856
+  - Training Time: 30.76 ms/iter
+  - Avg Allocated GPU Memory: 349.30 MB
+================================================================================
+
+================================================================================
+Model: Flowformer, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_090342
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Flowformer
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.50604445
+  - MAE: 0.49730009
+  - Training Time: 33.24 ms/iter
+  - Avg Allocated GPU Memory: 365.39 MB
+================================================================================
+
+================================================================================
+Model: Informer, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20251206_145546
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Informer
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.55508882
+  - MAE: 0.50599617
+  - Training Time: 34.62 ms/iter
+  - Avg Allocated GPU Memory: 260.80 MB
+================================================================================
+
+================================================================================
+Model: Autoformer, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20260125_125328
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Autoformer
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 5
+  - Learning Rate: 5e-05
+  - D Model: 256
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.52590942
+  - MAE: 0.48867664
+  - Training Time: 45.79 ms/iter
+  - Avg Allocated GPU Memory: 221.19 MB
+================================================================================
+
+================================================================================
+Model: interPDN, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20260510_131433
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: interPDN
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 256
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.33030456
+  - MAE: 0.35139540
+  - Training Time: 17.87 ms/iter
+  - Avg Allocated GPU Memory: 61.78 MB
+================================================================================
+
+================================================================================
+Model: BiMamba4TS, Dataset: ETTm1, Model ID: ETTm1_96_96, Timestamp: 20260510_141744
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: BiMamba4TS
+  - Dataset: ETTm1
+  - Model ID: ETTm1_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 64
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.32579955
+  - MAE: 0.36325687
+  - Training Time: 12.97 ms/iter
+  - Avg Allocated GPU Memory: 60.22 MB
+================================================================================
+

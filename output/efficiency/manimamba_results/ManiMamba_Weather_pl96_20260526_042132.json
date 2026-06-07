@@ -1,0 +1,42 @@
+{
+    "model": "ManiMamba",
+    "dataset": "Weather",
+    "model_id": "Weather_96_96",
+    "timestamp": "20260526_042132",
+    "metrics": {
+        "mse": 0.1676611453294754,
+        "mae": 0.21222862601280212,
+        "train_time_ms_per_iter": 17.5955,
+        "avg_gpu_mem_allocated_mb": 59.8199
+    },
+    "config": {
+        "seq_len": 96,
+        "pred_len": 96,
+        "enc_in": 21,
+        "e_layers": 2,
+        "d_model": 128,
+        "d_ff": 256,
+        "d_state": 16,
+        "expand": 2,
+        "epsilon": 0.0001,
+        "cov_window": 32,
+        "cov_stride": 16,
+        "cov_rank": 0,
+        "geo_d_model": 128,
+        "geo_d_state": 8,
+        "geo_d_conv": 2,
+        "geo_expand": 2,
+        "geo_inject_threshold": 100,
+        "ablation": "",
+        "dropout": 0.2,
+        "learning_rate": 8e-05,
+        "weight_decay": null,
+        "batch_size": 16,
+        "optim": "Adam",
+        "train_epochs": 10,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "use_amp": 1,
+        "gpu": 0
+    }
+}

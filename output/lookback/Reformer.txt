@@ -1,0 +1,46 @@
+(ECL Reformer)
+ECL_48_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:48_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.2626979351043701, mae:0.35229918360710144
+ECL_96_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:96_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.2719433307647705, mae:0.35842955112457275
+ECL_192_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:192_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.26845258474349976, mae:0.3558058440685272
+ECL_336_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:336_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.277138352394104, mae:0.3629768192768097
+ECL_720_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:720_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.25968435406684875, mae:0.35407304763793945
+
+(ETTm1 Reformer)
+ETTm1_48_96_Reformer_des:LOOKBACK_REFORM_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.8049095869064331, mae:0.6320769786834717
+ETTm1_96_96_Reformer_des:LOOKBACK_REFORM_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.7951728701591492, mae:0.6485500931739807
+ETTm1_192_96_Reformer_des:LOOKBACK_REFORM_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6604174971580505, mae:0.5833033919334412
+ETTm1_336_96_Reformer_des:LOOKBACK_REFORM_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6532523036003113, mae:0.5905143618583679
+ETTm1_720_96_Reformer_des:LOOKBACK_REFORM_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6913331151008606, mae:0.6200549006462097
+
+(Weather Reformer)
+Weather_48_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:48_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.4606742262840271, mae:0.48717963695526123
+Weather_96_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:96_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.43461984395980835, mae:0.4654019773006439
+Weather_192_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:192_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.35914263129234314, mae:0.3997151553630829
+Weather_336_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:336_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.4926661550998688, mae:0.4825576841831207
+Weather_720_96_Reformer_des:LOOKBACK_REFORM_lr:0.0005_ft:M_sl:720_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6162738800048828, mae:0.6008325815200806
+
+(PEMS08 Reformer)
+PEMS08_48_96_Reformer|LOOKBACK|lr:0.001|ft:M|sl:48|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.3234921991825104, mae:0.31875520944595337
+PEMS08_96_96_Reformer|LOOKBACK|lr:0.001|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.302120566368103, mae:0.3070841133594513
+PEMS08_144_96_Reformer|LOOKBACK|lr:0.001|ft:M|sl:144|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.28937777876853943, mae:0.29328396916389465
+PEMS08_192_96_Reformer|LOOKBACK|lr:0.001|ft:M|sl:192|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.28284698724746704, mae:0.29002174735069275
+

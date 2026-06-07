@@ -1,0 +1,35 @@
+{
+    "study_name": "ManiMamba_PEMS07_pl48",
+    "version": "v4",
+    "best_value": 0.12058958411216736,
+    "best_params": {
+        "e_layers": 3,
+        "batch_size": 16,
+        "d_model": 512,
+        "d_state": 16,
+        "expand": 2,
+        "epsilon": 0.0001,
+        "cov_window": 16,
+        "cov_stride": 8,
+        "cov_rank": 16,
+        "geo_d_model": 128,
+        "geo_d_state": 8,
+        "geo_d_conv": 4,
+        "geo_expand": 2,
+        "weight_decay": 1e-06,
+        "learning_rate": 0.0004912159033336273,
+        "train_epochs": 15,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "dropout": 0.2,
+        "seed": 2023
+    },
+    "best_trial_number": 136,
+    "best_trial_user_attrs": {
+        "mse": 0.12058958411216736,
+        "mae": 0.2308340072631836,
+        "checkpoint": null,
+        "arch_signature": "512|0|3|16|2|0.0001|16|8|16|128|8|4|2",
+        "auto_batch_size": 16
+    }
+}

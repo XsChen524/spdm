@@ -1,0 +1,42 @@
+{
+    "model": "ManiMamba",
+    "dataset": "ECL",
+    "model_id": "ECL_96_336",
+    "timestamp": "20260526_080430",
+    "metrics": {
+        "mse": 0.1822863072156906,
+        "mae": 0.27680855989456177,
+        "train_time_ms_per_iter": 23.5791,
+        "avg_gpu_mem_allocated_mb": 326.378
+    },
+    "config": {
+        "seq_len": 96,
+        "pred_len": 336,
+        "enc_in": 321,
+        "e_layers": 2,
+        "d_model": 256,
+        "d_ff": 512,
+        "d_state": 16,
+        "expand": 1,
+        "epsilon": 0.0001,
+        "cov_window": 16,
+        "cov_stride": 8,
+        "cov_rank": 16,
+        "geo_d_model": 64,
+        "geo_d_state": 16,
+        "geo_d_conv": 4,
+        "geo_expand": 1,
+        "geo_inject_threshold": 100,
+        "ablation": "",
+        "dropout": 0.2,
+        "learning_rate": 0.00033,
+        "weight_decay": null,
+        "batch_size": 16,
+        "optim": "Adam",
+        "train_epochs": 10,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "use_amp": 1,
+        "gpu": 0
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "model": "ManiMamba",
+    "dataset": "ETTm1",
+    "model_id": "ETTm1_96_96",
+    "timestamp": "20260526_024924",
+    "metrics": {
+        "mse": 0.33524268865585327,
+        "mae": 0.3733752965927124,
+        "train_time_ms_per_iter": 20.8245,
+        "avg_gpu_mem_allocated_mb": 174.6404
+    },
+    "config": {
+        "seq_len": 96,
+        "pred_len": 96,
+        "enc_in": 7,
+        "e_layers": 2,
+        "d_model": 256,
+        "d_ff": 512,
+        "d_state": 8,
+        "expand": 2,
+        "epsilon": 0.001,
+        "cov_window": 8,
+        "cov_stride": 4,
+        "cov_rank": 0,
+        "geo_d_model": 256,
+        "geo_d_state": 4,
+        "geo_d_conv": 2,
+        "geo_expand": 2,
+        "geo_inject_threshold": 100,
+        "ablation": "",
+        "dropout": 0.2,
+        "learning_rate": 9e-06,
+        "weight_decay": null,
+        "batch_size": 16,
+        "optim": "Adam",
+        "train_epochs": 10,
+        "warmup_epochs": 3,
+        "patience": 5,
+        "use_amp": 1,
+        "gpu": 0
+    }
+}

@@ -1,0 +1,177 @@
+# ManiMamba default configurations for efficiency experiments.
+#
+# Sources:
+#   - scripts/multivariate_forecasting/ETT/ManiMamba_ETTm1.sh
+#   - scripts/multivariate_forecasting/Weather/ManiMamba.sh
+#   - scripts/multivariate_forecasting/PEMS/ManiMamba_PEMS04.sh
+#   - scripts/multivariate_forecasting/ECL/ManiMamba.sh
+
+ManiMamba:
+
+    # =========================================================================
+    # ETTm1 — pred_len=96
+    # Source: scripts/multivariate_forecasting/ETT/ManiMamba_ETTm1.sh (index 0)
+    # =========================================================================
+    ETTm1_96:
+        dataset: ETTm1
+        root_path: ./data/ETT-small/
+        data_path: ETTm1.csv
+        data: ETTm1
+        freq: t
+        enc_in: 7
+        dec_in: 7
+        c_out: 7
+        seq_len: 96
+        pred_len: 96
+
+        e_layers: 3
+        d_model: 256
+        d_ff: 512
+        d_state: 8
+        expand: 2
+        epsilon: 0.001
+        cov_window: 8
+        cov_stride: 4
+        cov_rank: 0
+        geo_d_model: 256
+        geo_d_state: 4
+        geo_d_conv: 2
+        geo_expand: 2
+        geo_inject_threshold: 100
+        dropout: 0.2
+
+        learning_rate: 1e-5
+        batch_size: 16
+        optim: Adam
+        lradj: type1
+        cosine_eta_min: 1.0e-7
+        warmup_epochs: 3
+        patience: 5
+        use_amp: 1
+        seed: 2023
+
+    # =========================================================================
+    # Weather — pred_len=96
+    # Source: scripts/multivariate_forecasting/Weather/ManiMamba.sh (index 0)
+    # =========================================================================
+    Weather_96:
+        dataset: Weather
+        root_path: ./data/weather/
+        data_path: weather.csv
+        data: custom
+        freq: t
+        enc_in: 21
+        dec_in: 21
+        c_out: 21
+        seq_len: 96
+        pred_len: 96
+
+        e_layers: 3
+        d_model: 256
+        d_ff: 512
+        d_state: 16
+        expand: 2
+        epsilon: 0.0001
+        cov_window: 32
+        cov_stride: 16
+        cov_rank: 0
+        geo_d_model: 128
+        geo_d_state: 8
+        geo_d_conv: 2
+        geo_expand: 2
+        geo_inject_threshold: 100
+        dropout: 0.2
+
+        learning_rate: 4.89e-05
+        batch_size: 16
+        optim: Adam
+        lradj: type1
+        cosine_eta_min: 1.0e-7
+        warmup_epochs: 3
+        patience: 5
+        use_amp: 1
+        seed: 2023
+
+    # =========================================================================
+    # PEMS04 — pred_len=12
+    # Source: scripts/multivariate_forecasting/PEMS/ManiMamba_PEMS04.sh (index 0)
+    # =========================================================================
+    PEMS04_12:
+        dataset: PEMS04
+        root_path: ./data/PEMS/
+        data_path: PEMS04.npz
+        data: PEMS
+        freq: h
+        enc_in: 307
+        dec_in: 307
+        c_out: 307
+        seq_len: 96
+        pred_len: 12
+
+        e_layers: 2
+        d_model: 256
+        d_ff: 512
+        d_state: 16
+        expand: 1
+        epsilon: 0.0001
+        cov_window: 16
+        cov_stride: 8
+        cov_rank: 32
+        geo_d_model: 64
+        geo_d_state: 16
+        geo_d_conv: 4
+        geo_expand: 1
+        geo_inject_threshold: 100
+        dropout: 0.1
+
+        learning_rate: 0.0005
+        batch_size: 16
+        optim: Adam
+        lradj: type1
+        cosine_eta_min: 1.0e-7
+        warmup_epochs: 3
+        patience: 5
+        use_amp: 1
+        seed: 2023
+
+    # =========================================================================
+    # ECL — pred_len=336
+    # Source: scripts/multivative_forecasting/ECL/ManiMamba.sh (index 2)
+    # =========================================================================
+    ECL_336:
+        dataset: ECL
+        root_path: ./data/electricity/
+        data_path: electricity.csv
+        data: custom
+        freq: h
+        enc_in: 321
+        dec_in: 321
+        c_out: 321
+        seq_len: 96
+        pred_len: 336
+
+        e_layers: 2
+        d_model: 256
+        d_ff: 512
+        d_state: 16
+        expand: 1
+        epsilon: 0.0001
+        cov_window: 16
+        cov_stride: 8
+        cov_rank: 16
+        geo_d_model: 64
+        geo_d_state: 16
+        geo_d_conv: 4
+        geo_expand: 1
+        geo_inject_threshold: 100
+        dropout: 0.2
+
+        learning_rate: 5.0e-05
+        batch_size: 16
+        optim: Adam
+        lradj: type1
+        cosine_eta_min: 1.0e-7
+        warmup_epochs: 3
+        patience: 5
+        use_amp: 1
+        seed: 2023

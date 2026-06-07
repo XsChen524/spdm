@@ -1,0 +1,223 @@
+================================================================================
+Model: S_Mamba, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251206_070243
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: S_Mamba
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.16770159
+  - MAE: 0.21135816
+  - Training Time: 30.36 ms/iter
+  - Avg Allocated GPU Memory: 146.56 MB
+================================================================================
+
+================================================================================
+Model: iTransformer, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251206_071147
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: iTransformer
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.17558385
+  - MAE: 0.21544974
+  - Training Time: 20.68 ms/iter
+  - Avg Allocated GPU Memory: 119.33 MB
+================================================================================
+
+================================================================================
+Model: PatchTST, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251227_075150
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: PatchTST
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 128
+  - Train Epochs: 10
+  - Learning Rate: 0.0001
+  - D Model: 128
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.18316819
+  - MAE: 0.22246672
+  - Training Time: 158.87 ms/iter
+  - Avg Allocated GPU Memory: 876.15 MB
+================================================================================
+
+================================================================================
+Model: DLinear, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251207_012356
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: DLinear
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.16785929
+  - MAE: 0.21320707
+  - Training Time: 24.56 ms/iter
+  - Avg Allocated GPU Memory: 24.56 MB
+================================================================================
+
+================================================================================
+Model: Transformer, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251206_072024
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Transformer
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.37378326
+  - MAE: 0.42171878
+  - Training Time: 33.15 ms/iter
+  - Avg Allocated GPU Memory: 446.29 MB
+================================================================================
+
+================================================================================
+Model: Flowformer, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251206_074604
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Flowformer
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.36979130
+  - MAE: 0.42783076
+  - Training Time: 37.43 ms/iter
+  - Avg Allocated GPU Memory: 480.59 MB
+================================================================================
+
+================================================================================
+Model: Informer, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20251206_075444
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Informer
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 3
+  - Seq Len: 96
+  - Pred Len: 96
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.29276925
+  - MAE: 0.35677114
+  - Training Time: 44.46 ms/iter
+  - Avg Allocated GPU Memory: 334.26 MB
+================================================================================
+
+================================================================================
+Model: Autoformer, Dataset: Weather, Model ID: Weather_96_96, Timestamp: 20260125_131016
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: Autoformer
+  - Dataset: Weather
+  - Model ID: Weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 5
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.32298630
+  - MAE: 0.37313628
+  - Training Time: 46.40 ms/iter
+  - Avg Allocated GPU Memory: 459.44 MB
+================================================================================
+
+================================================================================
+Model: BiMamba4TS, Dataset: weather, Model ID: weather_96_96, Timestamp: 20260510_142246
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: BiMamba4TS
+  - Dataset: weather
+  - Model ID: weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 64
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.17392306
+  - MAE: 0.21740724
+  - Training Time: 13.78 ms/iter
+  - Avg Allocated GPU Memory: 148.15 MB
+================================================================================
+
+================================================================================
+Model: interPDN, Dataset: weather, Model ID: weather_96_96, Timestamp: 20260510_132153
+--------------------------------------------------------------------------------
+Configuration:
+  - Model: interPDN
+  - Dataset: weather
+  - Model ID: weather_96_96
+  - Batch Size: 16
+  - Train Epochs: 10
+  - Learning Rate: 5e-05
+  - D Model: 512
+  - E Layers: 2
+  - Seq Len: 96
+  - Pred Len: 96
+  - Low Rank: 0
+--------------------------------------------------------------------------------
+Results:
+  - MSE: 0.18210962
+  - MAE: 0.21677901
+  - Training Time: 18.78 ms/iter
+  - Avg Allocated GPU Memory: 98.52 MB
+================================================================================
+

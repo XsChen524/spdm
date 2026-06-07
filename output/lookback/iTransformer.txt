@@ -1,0 +1,34 @@
+(ETTm1 iTransformer)
+ETTm1_48_96_iTransformer_des:LOOKBACK_ITRANS_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.4705893397331238, mae:0.42851522564888
+ETTm1_96_96_iTransformer_des:LOOKBACK_ITRANS_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.33985450863838196, mae:0.37547630071640015
+ETTm1_192_96_iTransformer_des:LOOKBACK_ITRANS_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.30552414059638977, mae:0.35309112071990967
+ETTm1_336_96_iTransformer_des:LOOKBACK_ITRANS_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.29957565665245056, mae:0.35320866107940674
+ETTm1_720_96_iTransformer_des:LOOKBACK_ITRANS_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:128_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3109751045703888, mae:0.3663707673549652
+
+(Weather iTransformer)
+Weather_48_96_iTransformer_des:LOOKBACK_ITRANS_lr:0.0001_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.20490072667598724, mae:0.23739217221736908
+Weather_96_96_iTransformer_des:LOOKBACK_ITRANS_lr:0.0001_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.18058855831623077, mae:0.22196674346923828
+Weather_192_96_iTransformer_des:LOOKBACK_ITRANS_lr:0.0001_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.16937509179115295, mae:0.21380165219306946
+Weather_336_96_iTransformer_des:LOOKBACK_ITRANS_lr:0.0001_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.16529522836208344, mae:0.2129584550857544
+Weather_720_96_iTransformer_des:LOOKBACK_ITRANS_lr:0.0001_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.16198797523975372, mae:0.21442463994026184
+
+(PEMS08 iTransformer)
+PEMS08_48_96_iTransformer|LOOKBACK|lr:0.001|ft:M|sl:48|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.537402868270874, mae:0.4999234974384308
+PEMS08_96_96_iTransformer|LOOKBACK|lr:0.001|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.4308033585548401, mae:0.43711042404174805
+PEMS08_144_96_iTransformer|LOOKBACK|lr:0.001|ft:M|sl:144|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.32897451519966125, mae:0.3643227517604828
+PEMS08_192_96_iTransformer|LOOKBACK|lr:0.001|ft:M|sl:192|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.2518819272518158, mae:0.2994089126586914
+

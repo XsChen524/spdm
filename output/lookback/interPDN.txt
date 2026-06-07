@@ -1,0 +1,34 @@
+(ETTm1 interPDN)
+ETTm1_48_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:48|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:2
+mse:0.48500803112983704, mae:0.41628360748291016
+ETTm1_96_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:96|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:3
+mse:0.32643041014671326, mae:0.34795844554901123
+ETTm1_192_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:192|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:4
+mse:0.2940152883529663, mae:0.33343812823295593
+ETTm1_336_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:336|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:5
+mse:0.28433698415756226, mae:0.33057859539985657
+ETTm1_720_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:720|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:6
+mse:0.28282150626182556, mae:0.3310708999633789
+
+(Weather interPDN)
+Weather_48_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:48|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.19285456836223602, mae:0.22659355401992798
+Weather_96_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:96|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.17319731414318085, mae:0.20819872617721558
+Weather_192_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:192|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.15709920227527618, mae:0.19248586893081665
+Weather_336_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:336|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.1468905210494995, mae:0.184255912899971
+Weather_720_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:720|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:1
+mse:0.14270387589931488, mae:0.17998956143856049
+
+(PEMS08 interPDN)
+PEMS08_48_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:48|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:2
+mse:1.2011610269546509, mae:0.8005889058113098
+PEMS08_96_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:96|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:3
+mse:0.803719699382782, mae:0.6193563938140869
+PEMS08_144_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:144|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:4
+mse:0.5655566453933716, mae:0.49776384234428406
+PEMS08_192_96_interPDN|LOOKBACK_INTERPDN|lr:0.0001|ft:M|sl:192|ll:48|pl:96|dm:512|nh:8|el:2|dl:1|df:2048|fc:1|eb:timeF|dt:True|cs:projection|itr:0|checkpoint:5
+mse:0.39317750930786133, mae:0.38866695761680603
+

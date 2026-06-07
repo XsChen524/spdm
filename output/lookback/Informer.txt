@@ -1,0 +1,34 @@
+(ETTm1 Informer)
+ETTm1_48_96_Informer_des:LOOKBACK_INFORM_lr:5e-05_ft:M_sl:48_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6123553514480591, mae:0.5423969626426697
+ETTm1_96_96_Informer_des:LOOKBACK_INFORM_lr:5e-05_ft:M_sl:96_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6210225224494934, mae:0.554256796836853
+ETTm1_192_96_Informer_des:LOOKBACK_INFORM_lr:5e-05_ft:M_sl:192_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6201175451278687, mae:0.5471846461296082
+ETTm1_336_96_Informer_des:LOOKBACK_INFORM_lr:5e-05_ft:M_sl:336_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.7246071100234985, mae:0.6185628175735474
+ETTm1_720_96_Informer_des:LOOKBACK_INFORM_lr:5e-05_ft:M_sl:720_ll:48_pl:96_dm:256_nh:8_el:2_dl:1_df:256_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.7432412505149841, mae:0.6058588624000549
+
+(Weather Informer)
+Weather_48_96_Informer_des:LOOKBACK_INFORM_lr:0.0005_ft:M_sl:48_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.6248042583465576, mae:0.5537986159324646
+Weather_96_96_Informer_des:LOOKBACK_INFORM_lr:0.0005_ft:M_sl:96_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.5182909369468689, mae:0.5214889645576477
+Weather_192_96_Informer_des:LOOKBACK_INFORM_lr:0.0005_ft:M_sl:192_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3800952434539795, mae:0.4407487213611603
+Weather_336_96_Informer_des:LOOKBACK_INFORM_lr:0.0005_ft:M_sl:336_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3167518377304077, mae:0.39192232489585876
+Weather_720_96_Informer_des:LOOKBACK_INFORM_lr:0.0005_ft:M_sl:720_ll:48_pl:96_dm:512_nh:8_el:3_dl:1_df:512_fc:1_eb:timeF_dt:True_cs:projection_itr:0
+mse:0.3279537558555603, mae:0.3931567966938019
+
+(PEMS08 Informer)
+PEMS08_48_96_Informer|LOOKBACK|lr:0.001|ft:M|sl:48|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.31835153698921204, mae:0.3218274712562561
+PEMS08_96_96_Informer|LOOKBACK|lr:0.001|ft:M|sl:96|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.3394717574119568, mae:0.344176322221756
+PEMS08_144_96_Informer|LOOKBACK|lr:0.001|ft:M|sl:144|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.3192949891090393, mae:0.3316411077976227
+PEMS08_192_96_Informer|LOOKBACK|lr:0.001|ft:M|sl:192|ll:48|pl:96|dm:256|nh:8|el:2|dl:1|df:256|fc:1|eb:timeF|dt:True|cs:projection|itr:0
+mse:0.32211917638778687, mae:0.33488377928733826
+
