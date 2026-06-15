@@ -1,10 +1,24 @@
 # SPDM: Geometry-Modulated State Space Modeling with Manifold Constraints for Time Series Forecasting
 
-Existing state-space models process multivariate time series by scanning tokenized sequences, discarding the continuously evolving geometric structure of cross-variable correlations. SPDM introduces **manifold-constrained state-space dynamics**: treating the evolving correlation structure as a continuous Riemannian trajectory on the SPD manifold $\mathcal{P}_N$, projecting it to a Euclidean tangent space via the log-Euclidean Fréchet mean, and directly injecting the resulting geometric signals into the SSM's selective parameters. This preserves the linear-time complexity of the Mamba parallel scan, and makes the selective scan itself topology-aware, since geometry is not an auxiliary input but a formative component of the state-space dynamics. Experiments on **11** **real-world benchmarks** establish SOTA forecasting performance, with ablation studies confirming that manifold-constrained dynamics are the dominant factor behind these gains.
+Existing state-space models process multivariate time series by scanning tokenized sequences, discarding the continuously evolving geometric structure of cross-variable correlations. SPDM introduces **manifold-constrained state-space dynamics**: treating the evolving correlation structure as a continuous Riemannian trajectory on the SPD manifold $\mathcal{P}_N$, projecting it to a Euclidean tangent space via the log-Euclidean Fréchet mean, and directly injecting the resulting geometric signals into the SSM's selective parameters. This preserves the linear-time complexity of the Mamba parallel scan, and makes the selective scan itself topology-aware, since geometry is not an auxiliary input but a formative component of the state-space dynamics. Experiments on **11** **real-world benchmarks** establish SOTA forecasting performance, with ablation studies confirming that manifold-constrained dynamics are the dominant factor behind these gains. `<a href="https://arxiv.org/abs/2606.09917"><img src="https://img.shields.io/badge/ArXiv-2606.09917-B31B1B?style=flat&logo=arxiv" alt="Paper">``</a>`
 
 <p align="center">
   <img src="assets/figures/1_framework.png" alt="SPDM Framework" width="95%">
 </p>
+
+## Citation
+
+```bibtex
+@article{chen2026spdm,
+      title={SPDM: Geometry-Modulated State Space Modeling with Manifold Constraints for Time Series Forecasting}, 
+      author={Xingsheng Chen and Siu-Ming Yiu},
+      year={2026},
+      eprint={2606.09917},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2606.09917}, 
+}
+```
 
 ## Installation
 
@@ -70,16 +84,6 @@ SPDM achieves the **best overall average MSE or MAE** on ETTh1, ETTh2, Weather, 
 <p align="center">
   <img src="assets/figures/2_efficiency.png" alt="Efficiency Comparison">
 </p>
-
-## Citation
-
-```bibtex
-@article{chen2026spdm,
-  title={SPDM: Geometry-Modulated State Space Modeling with Manifold Constraints for Time Series Forecasting},
-  author={Chen, Xingsheng and Yiu, Siu-Ming},
-  year={2026}
-}
-```
 
 ## References
 
