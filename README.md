@@ -64,7 +64,7 @@ poetry run poe cuda
 
 ### Data
 
-Place datasets under `./data/` (e.g. `./data/ETT-small/`, `./data/weather/`, `./data/exchange_rate/`).
+Download datasets in .pt format from [link](https://drive.google.com/drive/folders/1w3W7p0yYz9a2MxshHlaFrIVb0SHZPHYB?usp=drive_linkPlace), and place them under `./data/` (e.g. `./data/ETT-small/`, `./data/weather/`, `./data/exchange_rate/`).
 
 ## Quick Start
 
